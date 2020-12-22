@@ -55,24 +55,72 @@ Object-Oriented Programming is defined as a structure of objects that contain th
 
 ## class
 
-- field, backing field
-- property
-- constructor
-- method
-- destructor
+- field, backing field = variable at the class level, backing field is always private
+- property = a backing field accessible via 2 distinct methods called get and set
+- constructor = instantiation method
+- method = block of code containing a set of functionality
+- destructor = de-instantiation method
+
+## design pattern
+
+Recurring code structure, Reusable formal solution to a common problem
+
+- singleton = limit instantiation to a single common instance for the application lifetime
+- factory method = formalize the instantiation of objects using a common method
+
+
+class Fred
+{
+  factory.makeComputer(); // concrete
+  new computer();
+  string s = "some text"; value has a type, container has a type
+  var s = "some text"; container type is inferred by its value
+  s = 10; // error
+
+  public string Name {get; set;} // property
+
+  private string name; // backing field
+  getName(); // get method
+  setName(); // set method
+}
+
+class Monica
+{
+  factory.makeComputer(); // concrete
+  new computer(laptop);
+}
+
+class Computer
+{
+  computer(string type);
+}
+
+class Factory
+{
+  makeComputer() creator
+  {
+    new lotsOfPetaRam(); // abstract
+  }
+}
 
 ## questions
 
-1. how do you define the C# Language
-1. talk about the benefits of the CLR
-1. explain the compilation process
-1. how do you define the OOP Concept
-1. how do you define a Design Pattern
-1. what is the Singleton Design Pattern
-1. what is the Factory Method Design Pattern
-1. what is Unit Testing
-1. how have you tested your code
-1. how do you handle errors in your code
-1. what is your process to fix errors in your code
-1. what is your understanding of Serialization
-1. more to come :)
+1. how do you define the C# Language = compiled, strongly typed, statically typed, .NET language
+1. talk about the benefits of the CLR = portability, interoperability, performance, memory management
+1. explain the compilation process = code is transformed into IL/Assembly transformed into Bytecode
+1. how do you define the OOP Concept = refer up
+1. how do you define a Design Pattern = refer up
+1. what is the Singleton Design Pattern = refer up
+1. what is the Factory Method Design Pattern = refer up
+1. what is Unit Testing = ability to test a single functionality at a time, arrange/act/assert, xUnit
+1. how have you tested your code = xUnit, reference the project to test, assert on the functionality
+1. how do you handle errors in your code = implementing try/catch/finally, managing null values
+1. what is your process to fix errors in your code = debugging, breakpoints
+1. what is your understanding of Serialization = conversion of objects into xml, data transformation between systems
+1. what is OUT keyword = ability to return more then 1 value from a method
+1. what is casting = transformation from 1 object type to another object type, by reference
+1. what is parsing = conversion from 1 primitive type to another primitive type, by value
+1. difference between value vs reference = reference is a set of value types, value is part of the BCL
+1. what is method overloading/overriding =
+1. what is a generic = type placeholder with constraint
+1. difference between array and list = array is static, list is dynamic
